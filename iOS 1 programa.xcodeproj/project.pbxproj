@@ -14,6 +14,10 @@
 		A31D9E181BD4AE4D00AFA140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31D9E161BD4AE4D00AFA140 /* LaunchScreen.storyboard */; };
 		A31D9E231BD4AE4D00AFA140 /* iOS_1_programaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D9E221BD4AE4D00AFA140 /* iOS_1_programaTests.swift */; };
 		A31D9E2E1BD4AE4D00AFA140 /* iOS_1_programaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D9E2D1BD4AE4D00AFA140 /* iOS_1_programaUITests.swift */; };
+		A31D9E3E1BD4AEFC00AFA140 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D9E3D1BD4AEFC00AFA140 /* MealTableViewCell.swift */; };
+		A31D9E421BD4B61700AFA140 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D9E411BD4B61700AFA140 /* MealTableViewController.swift */; };
+		A31D9E441BD4BA6700AFA140 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D9E431BD4BA6700AFA140 /* Meal.swift */; };
+		A38947C61BD9E46B00020D1A /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38947C51BD9E46B00020D1A /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		A31D9E291BD4AE4D00AFA140 /* iOS 1 programaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS 1 programaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31D9E2D1BD4AE4D00AFA140 /* iOS_1_programaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_1_programaUITests.swift; sourceTree = "<group>"; };
 		A31D9E2F1BD4AE4D00AFA140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A31D9E3D1BD4AEFC00AFA140 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewCell.swift; path = ../MealTableViewCell.swift; sourceTree = "<group>"; };
+		A31D9E411BD4B61700AFA140 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		A31D9E431BD4BA6700AFA140 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meal.swift; path = ../Meal.swift; sourceTree = "<group>"; };
+		A38947C51BD9E46B00020D1A /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,13 @@
 		A31D9E0C1BD4AE4D00AFA140 /* iOS 1 programa */ = {
 			isa = PBXGroup;
 			children = (
+				A31D9E431BD4BA6700AFA140 /* Meal.swift */,
+				A31D9E3D1BD4AEFC00AFA140 /* MealTableViewCell.swift */,
 				A31D9E0D1BD4AE4D00AFA140 /* AppDelegate.swift */,
 				A31D9E0F1BD4AE4D00AFA140 /* ViewController.swift */,
 				A31D9E111BD4AE4D00AFA140 /* Main.storyboard */,
+				A38947C51BD9E46B00020D1A /* RatingControl.swift */,
+				A31D9E411BD4B61700AFA140 /* MealTableViewController.swift */,
 				A31D9E141BD4AE4D00AFA140 /* Assets.xcassets */,
 				A31D9E161BD4AE4D00AFA140 /* LaunchScreen.storyboard */,
 				A31D9E191BD4AE4D00AFA140 /* Info.plist */,
@@ -255,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31D9E441BD4BA6700AFA140 /* Meal.swift in Sources */,
 				A31D9E101BD4AE4D00AFA140 /* ViewController.swift in Sources */,
 				A31D9E0E1BD4AE4D00AFA140 /* AppDelegate.swift in Sources */,
+				A31D9E421BD4B61700AFA140 /* MealTableViewController.swift in Sources */,
+				A38947C61BD9E46B00020D1A /* RatingControl.swift in Sources */,
+				A31D9E3E1BD4AEFC00AFA140 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS 1 programa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ragaisis.iOS-1-programa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS 1 programa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ragaisis.iOS-1-programa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,6 +501,7 @@
 				A31D9E341BD4AE4D00AFA140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A31D9E351BD4AE4D00AFA140 /* Build configuration list for PBXNativeTarget "iOS 1 programaTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +510,7 @@
 				A31D9E371BD4AE4D00AFA140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A31D9E381BD4AE4D00AFA140 /* Build configuration list for PBXNativeTarget "iOS 1 programaUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +519,7 @@
 				A31D9E3A1BD4AE4D00AFA140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
