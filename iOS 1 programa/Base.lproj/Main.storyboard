@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O3l-ve-pl8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sVc-pN-xtk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
@@ -9,16 +9,16 @@
             <objects>
                 <tableViewController id="hFG-0N-N0q" customClass="MealTableViewController" customModule="iOS_1_programa" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="zNJ-NJ-oDx">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MealTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="90" id="G5u-kA-5Px" customClass="MealTableViewCell" customModule="iOS_1_programa">
-                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G5u-kA-5Px" id="KbN-34-UKY">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="English-Language-Flag-1-icon" translatesAutoresizingMaskIntoConstraints="NO" id="cbh-9B-G3S">
@@ -48,43 +48,66 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Pietų meniu" id="i7s-cn-ff8">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dq4-5j-RLR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dq4-5j-RLR">
+                            <connections>
+                                <segue destination="O3l-ve-pl8" kind="push" id="VBz-Ef-ftE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="If9-oE-klJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1880" y="1210"/>
+            <point key="canvasLocation" x="1002.6666666666666" y="1145.4666666666667"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OMZ-Wt-b87">
             <objects>
-                <viewController storyboardIdentifier="viewControler" id="O3l-ve-pl8" customClass="GLKViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewControler" id="O3l-ve-pl8" customClass="ViewController" customModule="iOS_1_programa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aa7-BO-EE0"/>
                         <viewControllerLayoutGuide type="bottom" id="CIA-wj-E3p"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jwR-vE-GMa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAY-3d-90s" customClass="RatingControl" customModule="iOS_1_programa" colorLabel="IBBuiltInLabel-Yellow">
-                                <rect key="frame" x="20" y="468" width="261" height="65"/>
+                                <rect key="frame" x="20" y="336" width="560" height="57"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.92054538846355838" blue="0.61170437551601631" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier=""/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GWe-xe-jdu">
-                                <rect key="frame" x="20" y="37" width="560" height="403"/>
-                                <animations/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your text here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Vl-i3-Og3">
+                                <rect key="frame" x="12" y="20" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Fd-f9-2PB">
+                                <rect key="frame" x="97" y="85" width="390" height="169"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6oF-v4-X0f">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="N0s-UF-QA5"/>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="imageView" destination="8Fd-f9-2PB" id="NYi-jP-0FX"/>
+                        <outlet property="ratingControl" destination="rAY-3d-90s" id="Bfn-MA-fQR"/>
+                        <outlet property="saveButton" destination="N0s-UF-QA5" id="sBv-zN-jIz"/>
+                        <outlet property="textField" destination="8Vl-i3-Og3" id="aYs-uU-XvE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgC-UX-rXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1880" y="1905"/>
+            <point key="canvasLocation" x="1002" y="1843"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fOp-L1-dCM">
@@ -103,7 +126,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQn-za-U4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="1210"/>
+            <point key="canvasLocation" x="569.60000000000002" y="1145.4666666666667"/>
         </scene>
     </scenes>
     <resources>
